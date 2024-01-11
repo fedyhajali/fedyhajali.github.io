@@ -13,6 +13,7 @@ redirect_from:
 * Top navigation bar config: _data/navigation.yml
 * Single pages: _pages/
 * Collections of pages are .md or .html files in:
+  * _home/
   * _publications/
   * _portfolio/
   * _posts/
@@ -20,7 +21,7 @@ redirect_from:
   * _talks/
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+* Profile image (can set in _config.yml): images/fedyhajali.png
 
 ## Tips and hints
 

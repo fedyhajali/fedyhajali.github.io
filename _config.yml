@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Fedy Haj Ali"
 title_separator          : "-"
 name                     : &name "Fedy Haj Ali"
-description              : &description "personal description"
+description              : &description "Research Fellow at AImageLab - University of Modena and Reggio Emilia"
 url                      : https://fedyhajali.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "fedyhajali/fedyhajali.github.io"
@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Fedy Haj Ali"
-  avatar           : "profile-pic.png"
-  bio              : "Research Fellow at University of Modena and Reggio Emilia, focusing on multiple object tracking and detection."
+  avatar           : "fedyhajali.png"
+  bio              : "Research Fellow at AImageLab - University of Modena and Reggio Emilia."
   location         : "Modena, Italy"
-  employer         :  
+  employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=6ucN5lwAAAAJ&hl=en"
-  email            :  "fedyhajali@gmail.com"
+  email            : "fedyhajali@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -100,16 +100,16 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : # "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :  "https://www.linkedin.com/in/fedyhajali/"
-  orcid            : # "http://orcid.org/yourorcidurl"
+  linkedin         : "fedyhajali"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -175,6 +175,9 @@ kramdown:
 
 # Collections
 collections:
+  home:
+    output: true
+    permalink: /:collection/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -213,6 +216,15 @@ defaults:
   - scope:
       path: ""
       type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _home
+  - scope:
+      path: ""
+      type: home
     values:
       layout: single
       author_profile: true
